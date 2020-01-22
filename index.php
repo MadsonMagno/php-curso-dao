@@ -28,9 +28,26 @@ echo json_encode($search);*/
 
 
 //carrega um usuario autenticado
-
+/*
 $usuario = new Usuario();
 $usuario->login("jose", "123456789");
-echo "$usuario";
+echo "$usuario";*/
 
+
+//INSERT USUARIO NOVO
+/*
+$aluno = new Usuario("aluno3","@alun03");
+/*$aluno->setDeslogin("aluno1");
+$aluno->setDessenha("@lun01");
+
+$aluno->insert();
+
+echo $aluno;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(5);
+$usuario->update("professor","234234234");
+
+echo $usuario;
  ?>
